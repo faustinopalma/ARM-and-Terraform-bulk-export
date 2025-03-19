@@ -70,7 +70,6 @@ foreach ($subscription in $subscriptions) {
 
                 # Execute the export command and get the result object
                 $exportResult = Export-AzTerraform -ExportParameter $exportParameter
-                Write-Output $exportResult
 
                 # Extract the "Configuration" member from the result
                 $terraformConfig = $exportResult.Configuration
